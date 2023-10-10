@@ -1,6 +1,6 @@
 -- import: fastn
 -- import: fastn-community.github.io/footer
--- import: fastn-community.github.io/roboto-typography as typo
+-- import: fastn-community.github.io/inter-typography as typo
 -- import: fastn-community.github.io/dark-flame-cs as cs
 -- import: doc-site/common
 -- import: doc-site
@@ -37,7 +37,7 @@ optional ftd.raw-image-src favicon:
 -- ftd.ui list page.footer:
 
 -- footer.fastn-footer:
-copyright: Copyright © 2023 - <user_name>.github.io/<repo_name>
+copyright: Copyright © 2023 - at-the-vr.github.io/pixel-pusher
 site-logo: $common.fastn-logo
 powered-by-text: Powered by
 powered-by-link: https://fastn.com/
