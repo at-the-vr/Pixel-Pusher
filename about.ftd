@@ -1,6 +1,5 @@
 ;; IMPORT SECTION
 -- import: at-the-vr.github.io/pixel-pusher/components/theNavbar
--- import: at-the-vr.github.io/pixel-pusher/about
 
 ;; START
 -- ftd.column:
@@ -16,7 +15,7 @@ link-1: #
 navlink-2: About
 link-2: about
 
--- ftd.text: Home Page
+-- ftd.text: About Page
 
 
 -- end: ftd.column

@@ -1,6 +1,6 @@
 -- import: fastn
 -- import: fastn-community.github.io/footer
--- import: fastn-community.github.io/roboto-typography as typo
+-- import: fastn-community.github.io/inter-typography as typo
 -- import: fastn-community.github.io/dark-flame-cs as cs
 -- import: doc-site/common
 -- import: doc-site
