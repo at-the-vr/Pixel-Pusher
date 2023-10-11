@@ -13,27 +13,27 @@ optional string link-3:
 optional boolean $is-hover-l3: false
 optional boolean $on-click: false
 
+;; Navbar Containing Row Start
 
 -- ftd.row:
 width: fill-container
-margin-bottom.px: 30
 
+;; Desktop Viewport Only
 -- ftd.desktop:
 
 -- ftd.row:
 width: fill-container
-padding.px: 40
-spacing.fixed.px: 300
-
--- ftd.row:
 spacing.fixed.px: 10
 
+
+;;  Navbar Image
 -- ftd.image:
 src: $assets.files.assets.newMainLogo.png
 width.fixed.px: 90
 height.fixed.px: 70
 link: #
 
+;; Navbar Details Column Start
 -- ftd.column:
 
 -- ftd.text: $theNavbarContainer.title
@@ -43,6 +43,8 @@ link: $theNavbarContainer.title-link
 color: #000
 style: bold
 
+
+;; Navlinks Row Start
 -- ftd.row:
 height: fill-container
 spacing.fixed.px: 10
@@ -71,14 +73,27 @@ $on-mouse-leave$: $ftd.set-bool($a = $theNavbarContainer.is-hover-l2, v = false)
 
 -- end: ftd.row
 
+;; Navlinks Row End
+
 -- end: ftd.column
 
--- end: ftd.row
+;; Navbar Details Column Start
 
 -- end: ftd.row
 
 -- end: ftd.desktop
 
+
+
+
+
+
+
+
+
+
+
+;; Mobile Viewport Only
 -- ftd.mobile:
 
 -- ftd.row:
@@ -96,8 +111,8 @@ height.fixed.px: 30
 width.fixed.px: 30
 cursor: pointer
 anchor.id: mobile-nav
-top.px: 40
-right.px: 20
+top.px: 30
+right.px: 10
 $on-click$: $ftd.toggle($a = $theNavbarContainer.on-click)
 if: {$theNavbarContainer.on-click == false}
 
@@ -124,14 +139,11 @@ style: bold
 id: mobile-navlinks
 height.fixed.vh: 30
 width: fill-container
-;; background.solid if {theNavbarContainer.theme == "light"}: #fff
-;; background.solid: #000
 spacing.fixed.px: 40
 padding.px: 40
 anchor: window
 top.px: 0
 left.px: 0
-;; z-index: 9999
 if: {$theNavbarContainer.on-click}
 
 
@@ -143,8 +155,8 @@ width: fill-container
 ;; Close button image
 -- ftd.image:
 anchor.id: mobile-navlinks
-top.px: 40
-right.px: 40
+top.px: 45
+right.px: 28
 src: $assets.files.assets.black-cross.svg
 height.fixed.px: 40
 width.fixed.px: 40
@@ -164,7 +176,7 @@ border-style: dashed
 border-radius.px: 5
 background.solid: #D9D9D9
 border-color: #C6C6C6
-
+margin-top.px: 20
 
 -- ftd.text: $theNavbarContainer.navlink-1
 role: $inherited.types.heading-tiny
@@ -189,5 +201,6 @@ $on-click$: $ftd.toggle($a = $theNavbarContainer.on-click)
 -- end: ftd.mobile
 
 -- end: ftd.row
+;; Navbar Containing Row End
 
 -- end: theNavbarContainer

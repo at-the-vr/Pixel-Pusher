@@ -1,0 +1,63 @@
+-- component theHeroContainer:
+string title: 
+string subtitle:
+
+-- ftd.column:
+width: fill-container
+padding-vertical.px: 50
+spacing.fixed.px: 30
+
+-- ftd.text: $theHeroContainer.title
+color: #000
+width: fill-container
+role: $inherited.types.heading-medium
+
+-- ftd.text: $theHeroContainer.subtitle
+color: #000
+width: fill-container
+role: $inherited.types.copy-regular
+max-width.fixed.px: 900
+
+-- ftd.row:
+spacing.fixed.px: 20
+
+-- ftd.text: Find me on
+color: #000
+width: fill-container
+role: $inherited.types.copy-regular
+
+-- ftd.row:
+spacing.fixed.px: 10
+
+-- ftd.image:
+src: $assets.files.assets.MdiGithub.svg
+alt: GitHub Account URL
+link: https://www.github.com 
+open-in-new-tab: true 
+
+-- ftd.image:
+src: $assets.files.assets.MdiLinkedin.svg
+alt: Linkedin Account URL
+link: https://www.linkedin.com 
+open-in-new-tab: true 
+
+-- ftd.image:
+src: $assets.files.assets.Fa6BrandsXTwitter.svg
+alt: Twitter Account URL
+link: https://www.x.com 
+open-in-new-tab: true 
+
+-- ftd.image:
+src: $assets.files.assets.MaterialSymbolsMail.svg
+alt: Mail URL
+link: https://www.gmail.com 
+open-in-new-tab: true 
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: theHeroContainer
+

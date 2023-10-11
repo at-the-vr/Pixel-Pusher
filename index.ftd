@@ -1,12 +1,23 @@
 ;; IMPORT SECTION
 -- import: at-the-vr.github.io/pixel-pusher/components/theNavbar
--- import: at-the-vr.github.io/pixel-pusher/about
+-- import: at-the-vr.github.io/pixel-pusher/
+-- import: at-the-vr.github.io/pixel-pusher/components/theHero
+-- import: at-the-vr.github.io/pixel-pusher/components/theProjects
+-- import: at-the-vr.github.io/pixel-pusher/components/theSkills
+-- import: at-the-vr.github.io/pixel-pusher/components/theFooter
 
 ;; START
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+align-content: center
+
 -- ftd.column:
 height: fill-container
-width: fill-container
 background.solid: #FFF
+types: $inter-typography.types
+padding.px: 20
 
 -- theNavbar.theNavbarContainer:
 title: Pixel Pusher
@@ -16,7 +27,37 @@ link-1: #
 navlink-2: About
 link-2: about
 
--- ftd.text: Home Page
+-- theHero.theHeroContainer:
+title: Hello World!
+subtitle: I am a portfolio template made in fastn, if you want to know more about how you can customize this template, bring more components, click on the GitHub Icon to take you to the repository.
 
+-- theProjects.theProjectsContainer:
+project1: Midnight Rush Blog Template
+project1Link: https://fastn.com/featured/ds/mr-ds/
+project1Date: 1st Oct 2023
+project2: Inter Typography
+project2Link: https://fastn-community.github.io/inter-typography/
+project2Date: 13th Sep 2023
+project3: Saturated Sunset CS Theme
+project3Link: https://fastn.com/cs/saturated-sunset-cs/
+project3Date: 21st July 2023
+project4: Giggle Presentation Template
+project4Link: https://fastn.com/featured/sections/slides/giggle-presentation-template/ 
+project4Date: 6th July 2023
+
+-- theSkills.theSkillsContainer:
+skill1: fastn
+skill1Description: A lightweight full-stack framework
+skill2: Markdown
+skill2Description: simple and easy-to-use markup language
+skill3: Javascript
+skill3Description: A Just-in-time Compiled Language for Web Applications
+skill4: Kubernetes
+skill4Description: Automated management of containerized applications.
+
+-- theFooter.theFooterContainer:
+copywrite: Copyright © 2023 at-the-vr
 
 -- end: ftd.column
+
+-- end: ftd.row

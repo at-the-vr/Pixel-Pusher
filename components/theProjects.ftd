@@ -1,0 +1,82 @@
+-- component theProjectsContainer:
+string project1:
+string project1Link:
+string project1Date:
+string project2:
+string project2Link:
+string project2Date:
+string project3:
+string project3Link:
+string project3Date:
+string project4:
+string project4Link:
+string project4Date:
+
+-- ftd.column:
+spacing.fixed.px: 
+padding-bottom.px: 50
+
+-- ftd.text: Projects
+role: $inherited.types.heading-medium
+
+-- ftd.column:
+spacing.fixed.px: 10
+
+-- projectDetailGenerator:
+date: $theProjectsContainer.project1Date
+title: $theProjectsContainer.project1
+projectLink: $theProjectsContainer.project1Link
+
+-- projectDetailGenerator:
+date: $theProjectsContainer.project2Date
+title: $theProjectsContainer.project2
+projectLink: $theProjectsContainer.project2Link
+
+-- projectDetailGenerator:
+date: $theProjectsContainer.project3Date
+title: $theProjectsContainer.project3
+projectLink: $theProjectsContainer.project3Link
+
+-- projectDetailGenerator:
+date: $theProjectsContainer.project4Date
+title: $theProjectsContainer.project4
+projectLink: $theProjectsContainer.project4Link
+
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: theProjectsContainer
+
+
+
+
+
+
+
+
+
+-- component projectDetailGenerator:
+string date:
+string title:
+string projectLink:
+
+-- ftd.row:
+spacing.fixed.px: 20
+wrap: true
+
+-- ftd.text: $projectDetailGenerator.date
+color: #979797
+role: $inherited.types.copy-regular
+
+-- ftd.text: $projectDetailGenerator.title
+color: #000
+style: underline
+link: $projectDetailGenerator.projectLink
+open-in-new-tab: true
+role: $inherited.types.copy-regular
+
+-- end: ftd.row
+
+-- end: projectDetailGenerator
