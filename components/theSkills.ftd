@@ -1,0 +1,73 @@
+-- component theSkillsContainer:
+string skill1:
+string skill1Description:
+string skill2:
+string skill2Description:
+string skill3:
+string skill3Description:
+string skill4:
+string skill4Description:
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+margin-bottom.px: 30
+spacing.fixed.px: 30
+
+-- ftd.text: Technologies
+role: $inherited.types.heading-medium
+
+-- ftd.column:
+spacing.fixed.px: 10
+
+-- skillDetailGenerator:
+title: $theSkillsContainer.skill1
+desc: $theSkillsContainer.skill1Description
+
+-- skillDetailGenerator:
+title: $theSkillsContainer.skill2
+desc: $theSkillsContainer.skill2Description
+
+-- skillDetailGenerator:
+title: $theSkillsContainer.skill3
+desc: $theSkillsContainer.skill3Description
+
+-- skillDetailGenerator:
+title: $theSkillsContainer.skill4
+desc: $theSkillsContainer.skill4Description
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: theSkillsContainer
+
+
+
+
+
+
+
+
+
+
+-- component skillDetailGenerator:
+string title:
+string desc:
+
+-- ftd.row:
+spacing.fixed.px: 20
+wrap: true
+
+-- ftd.text: $skillDetailGenerator.title
+color: #000
+style: underline
+role: $inherited.types.copy-regular
+
+-- ftd.text: $skillDetailGenerator.desc
+color: #979797
+role: $inherited.types.copy-regular
+
+-- end: ftd.row
+
+-- end: skillDetailGenerator

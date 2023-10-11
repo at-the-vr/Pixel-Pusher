@@ -1,0 +1,44 @@
+-- component theFooterContainer:
+string copywrite: 
+
+
+-- ftd.row:
+width: fill-container
+padding-top.rem: 2
+padding-bottom.rem: 1
+spacing: space-between
+
+-- ftd.text: $theFooterContainer.copywrite
+color: #979797
+role: $inherited.types.copy-small
+text-align: center
+
+-- ftd.row:
+spacing.fixed.px: 10
+
+-- ftd.text: Home
+color: #979797
+role: $inherited.types.copy-small
+text-align: center
+link: #
+open-in-new-tab: true
+style: underline
+
+-- ftd.text: | 
+color: #979797
+role: $inherited.types.copy-small
+text-align: center
+link: #
+
+-- ftd.text: About
+color: #979797
+role: $inherited.types.copy-small
+text-align: center
+link: about
+style: underline
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: theFooterContainer
