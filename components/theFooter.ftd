@@ -21,7 +21,6 @@ color: #979797
 role: $inherited.types.copy-small
 text-align: center
 link: #
-open-in-new-tab: true
 style: underline
 
 -- ftd.text: | 

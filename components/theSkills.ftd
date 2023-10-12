@@ -15,7 +15,7 @@ margin-bottom.px: 30
 spacing.fixed.px: 30
 
 -- ftd.text: Technologies
-role: $inherited.types.heading-medium
+role: $inherited.types.heading-small
 
 -- ftd.column:
 spacing.fixed.px: 10
@@ -62,11 +62,11 @@ wrap: true
 -- ftd.text: $skillDetailGenerator.title
 color: #000
 style: underline
-role: $inherited.types.copy-regular
+role: $inherited.types.copy-small
 
 -- ftd.text: $skillDetailGenerator.desc
 color: #979797
-role: $inherited.types.copy-regular
+role: $inherited.types.copy-small
 
 -- end: ftd.row
 

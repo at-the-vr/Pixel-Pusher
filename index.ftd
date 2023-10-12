@@ -12,18 +12,19 @@
 width: fill-container
 height: fill-container
 align-content: center
+background.solid: #FFFAF0
 
 -- ftd.column:
 height: fill-container
-background.solid: #FFF
 types: $inter-typography.types
 padding.px: 20
+max-width.fixed.px: 500
 
 -- theNavbar.theNavbarContainer:
 title: Pixel Pusher
 title-link: #
 navlink-1: Home
-link-1: #
+link-1: /
 navlink-2: About
 link-2: about
 
