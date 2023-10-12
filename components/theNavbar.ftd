@@ -77,7 +77,7 @@ $on-mouse-leave$: $ftd.set-bool($a = $theNavbarContainer.is-hover-l2, v = false)
 
 -- end: ftd.column
 
-;; Navbar Details Column Start
+;; Navbar Details Column End
 
 -- end: ftd.row
 
@@ -97,27 +97,13 @@ $on-mouse-leave$: $ftd.set-bool($a = $theNavbarContainer.is-hover-l2, v = false)
 -- ftd.mobile:
 
 -- ftd.row:
-id: mobile-nav
 height.fixed.px: 100
 width: fill-container
-padding.px: 30
-z-index: 1000
-
-
-;; Hamburger menu
--- ftd.image:
-src: $assets.files.assets.black-hamburger.svg
-height.fixed.px: 30
-width.fixed.px: 30
-cursor: pointer
-anchor.id: mobile-nav
-top.px: 30
-right.px: 10
-$on-click$: $ftd.toggle($a = $theNavbarContainer.on-click)
-if: {$theNavbarContainer.on-click == false}
+padding.px: 20
+spacing: space-between
 
 -- ftd.row:
-spacing.fixed.px: 20
+spacing.fixed.px: 10
 
 -- ftd.image:
 src: $assets.files.assets.newMainLogo.png
@@ -134,37 +120,37 @@ style: bold
 
 -- end: ftd.row
 
-;; Navlinks
 -- ftd.column:
-id: mobile-navlinks
-height.fixed.vh: 30
-width: fill-container
-spacing.fixed.px: 40
-padding.px: 40
-anchor: window
-top.px: 0
-left.px: 0
-if: {$theNavbarContainer.on-click}
+spacing.fixed.px: 20
+align-content: right
 
-
-;; Close button Container
--- ftd.row:
-width: fill-container
-
-
-;; Close button image
+;; Hamburger menu
 -- ftd.image:
-anchor.id: mobile-navlinks
-top.px: 45
-right.px: 28
-src: $assets.files.assets.black-cross.svg
+src:  $assets.files.assets.black-hamburger.svg
+src if { theNavbarContainer.on-click }: $assets.files.assets.black-cross.svg
 height.fixed.px: 40
 width.fixed.px: 40
 cursor: pointer
+;; anchor.id: mobile-nav
+;; top.px: 30
+;; right.px: 10
 $on-click$: $ftd.toggle($a = $theNavbarContainer.on-click)
+;; $on-click-outside$: $ftd.set-bool($a = $theNavbarContainer.on-click, v = false)
 
--- end: ftd.row
-;; END OF CLOSE BUTTON CONTAINER
+;; Navlinks
+-- ftd.column:
+id: mobile-navlinks
+;; height.fixed.vh: 30
+align-content: right
+width: fill-container
+;; spacing.fixed.px: 40
+;; padding.px: 40
+;; anchor: window
+;; top.px: 0
+;; left.px: 0
+if: {$theNavbarContainer.on-click}
+
+;; Mobile Navlinks Container Start
 
 -- ftd.column:
 spacing.fixed.px: 10
@@ -174,23 +160,25 @@ border-width.px: 1
 padding.px: 5
 border-style: dashed
 border-radius.px: 5
-background.solid: #D9D9D9
-border-color: #C6C6C6
-margin-top.px: 20
+background.solid: #FDF5E6
+border-color: #FAF0E6
+z-index: 100
 
 -- ftd.text: $theNavbarContainer.navlink-1
 role: $inherited.types.heading-tiny
 link: $theNavbarContainer.link-1
 color: #FF5757
 style: bold, underline
-$on-click$: $ftd.toggle($a = $theNavbarContainer.on-click)
 
 -- ftd.text: $theNavbarContainer.navlink-2
 role: $inherited.types.heading-tiny
 link: $theNavbarContainer.link-2
 color: #FF5757
 style: bold, underline
-$on-click$: $ftd.toggle($a = $theNavbarContainer.on-click)
+
+-- end: ftd.column
+
+;; Mobile Navlinks Container End
 
 -- end: ftd.column
 

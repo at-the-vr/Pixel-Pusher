@@ -4,19 +4,20 @@ string subtitle:
 
 -- ftd.column:
 width: fill-container
-padding-vertical.px: 50
+padding-vertical.px: 30
 spacing.fixed.px: 30
+;; z-index: 1000
 
 -- ftd.text: $theHeroContainer.title
 color: #000
 width: fill-container
-role: $inherited.types.heading-medium
+role: $inherited.types.heading-small
 
 -- ftd.text: $theHeroContainer.subtitle
 color: #000
 width: fill-container
-role: $inherited.types.copy-regular
-max-width.fixed.px: 900
+role: $inherited.types.copy-small
+text-align: justify
 
 -- ftd.row:
 spacing.fixed.px: 20
@@ -24,7 +25,8 @@ spacing.fixed.px: 20
 -- ftd.text: Find me on
 color: #000
 width: fill-container
-role: $inherited.types.copy-regular
+role: $inherited.types.copy-small
+
 
 -- ftd.row:
 spacing.fixed.px: 10
