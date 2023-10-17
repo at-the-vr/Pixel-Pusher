@@ -16,6 +16,7 @@ spacing.fixed.px: 30
 
 -- ftd.text: Technologies
 role: $inherited.types.heading-small
+classes: wow, slideInLeft
 
 -- ftd.column:
 spacing.fixed.px: 10
@@ -63,10 +64,12 @@ wrap: true
 color: #000
 style: underline
 role: $inherited.types.copy-small
+classes: wow, slideInLeft
 
 -- ftd.text: $skillDetailGenerator.desc
 color: #979797
 role: $inherited.types.copy-small
+classes: wow, slideInLeft
 
 -- end: ftd.row
 

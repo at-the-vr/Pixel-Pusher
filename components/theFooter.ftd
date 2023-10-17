@@ -1,14 +1,15 @@
 -- component theFooterContainer:
-string copywrite: 
+string FooterNotes:
+optional boolean $is-hover-l1:
+optional boolean $is-hover-l2:
 
 
 -- ftd.row:
 width: fill-container
 padding-top.rem: 2
-padding-bottom.rem: 1
 spacing: space-between
 
--- ftd.text: $theFooterContainer.copywrite
+-- ftd.text: $theFooterContainer.FooterNotes
 color: #979797
 role: $inherited.types.copy-small
 text-align: center
@@ -22,6 +23,9 @@ role: $inherited.types.copy-small
 text-align: center
 link: #
 style: underline
+color if { theFooterContainer.is-hover-l1 }: #474747
+$on-mouse-enter$: $ftd.set-bool($a = $theFooterContainer.is-hover-l1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $theFooterContainer.is-hover-l1, v = false)
 
 -- ftd.text: | 
 color: #979797
@@ -35,6 +39,9 @@ role: $inherited.types.copy-small
 text-align: center
 link: about
 style: underline
+color if { theFooterContainer.is-hover-l2 }: #474747
+$on-mouse-enter$: $ftd.set-bool($a = $theFooterContainer.is-hover-l1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $theFooterContainer.is-hover-l1, v = false)
 
 -- end: ftd.row
 

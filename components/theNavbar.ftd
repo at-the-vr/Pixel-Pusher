@@ -99,7 +99,8 @@ $on-mouse-leave$: $ftd.set-bool($a = $theNavbarContainer.is-hover-l2, v = false)
 -- ftd.row:
 height.fixed.px: 100
 width: fill-container
-padding.px: 20
+padding-vertical.px: 20
+padding-horizontal.px: 10
 spacing: space-between
 
 -- ftd.row:
@@ -169,12 +170,14 @@ role: $inherited.types.heading-tiny
 link: $theNavbarContainer.link-1
 color: #FF5757
 style: bold, underline
+classes: wow, fadeIn
 
 -- ftd.text: $theNavbarContainer.navlink-2
 role: $inherited.types.heading-tiny
 link: $theNavbarContainer.link-2
 color: #FF5757
 style: bold, underline
+classes: wow, fadeIn
 
 -- end: ftd.column
 

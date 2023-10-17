@@ -18,6 +18,7 @@ padding-bottom.px: 50
 
 -- ftd.text: Projects
 role: $inherited.types.heading-small
+classes: wow, slideInRight
 
 -- ftd.column:
 spacing.fixed.px: 10
@@ -69,6 +70,7 @@ wrap: true
 -- ftd.text: $projectDetailGenerator.date
 color: #979797
 role: $inherited.types.copy-small
+classes: wow, slideInRight
 
 -- ftd.text: $projectDetailGenerator.title
 color: #000
@@ -76,6 +78,7 @@ style: underline
 link: $projectDetailGenerator.projectLink
 open-in-new-tab: true
 role: $inherited.types.copy-small
+classes: wow, slideInRight
 
 -- end: ftd.row
 
