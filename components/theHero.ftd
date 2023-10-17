@@ -1,6 +1,11 @@
 -- component theHeroContainer:
 string title: 
 string subtitle:
+string GitHubLink:
+string LinkedinLink:
+string TwitterLink:
+string MailLink:
+optional string BlogLink:
 
 -- ftd.column:
 width: fill-container
@@ -12,12 +17,14 @@ spacing.fixed.px: 30
 color: #000
 width: fill-container
 role: $inherited.types.heading-small
+classes: wow, slideInLeft
 
 -- ftd.text: $theHeroContainer.subtitle
 color: #000
 width: fill-container
 role: $inherited.types.copy-small
 text-align: justify
+classes: wow, slideInLeft
 
 -- ftd.row:
 spacing.fixed.px: 20
@@ -26,6 +33,7 @@ spacing.fixed.px: 20
 color: #000
 width: fill-container
 role: $inherited.types.copy-small
+classes: wow, slideInLeft
 
 
 -- ftd.row:
@@ -34,26 +42,38 @@ spacing.fixed.px: 10
 -- ftd.image:
 src: $assets.files.assets.MdiGithub.svg
 alt: GitHub Account URL
-link: https://www.github.com 
+link: $theHeroContainer.GitHubLink
 open-in-new-tab: true 
+classes: wow, slideInLeft
 
 -- ftd.image:
 src: $assets.files.assets.MdiLinkedin.svg
 alt: Linkedin Account URL
-link: https://www.linkedin.com 
+link: $theHeroContainer.LinkedinLink
 open-in-new-tab: true 
+classes: wow, slideInLeft
 
 -- ftd.image:
 src: $assets.files.assets.Fa6BrandsXTwitter.svg
 alt: Twitter Account URL
-link: https://www.x.com 
+link: $theHeroContainer.TwitterLink
 open-in-new-tab: true 
+classes: wow, slideInLeft
 
 -- ftd.image:
 src: $assets.files.assets.MaterialSymbolsMail.svg
 alt: Mail URL
-link: https://www.gmail.com 
+link: $theHeroContainer.MailLink
 open-in-new-tab: true 
+classes: wow, slideInLeft
+
+-- ftd.image:
+if: { theHeroContainer.BlogLink != NULL }
+src: $assets.files.assets.Fa6BrandsHashnode.svg
+alt: Mail URL
+link: $theHeroContainer.BlogLink
+open-in-new-tab: true 
+classes: wow, slideInLeft
 
 -- end: ftd.row
 

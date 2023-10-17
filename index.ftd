@@ -5,8 +5,10 @@
 -- import: at-the-vr.github.io/pixel-pusher/components/theProjects
 -- import: at-the-vr.github.io/pixel-pusher/components/theSkills
 -- import: at-the-vr.github.io/pixel-pusher/components/theFooter
+-- import: apneduniya.github.io/fastn-full-page/utils/animation
 
 ;; START
+-- animation.load:
 
 -- ftd.row:
 width: fill-container
@@ -31,6 +33,10 @@ link-2: about
 -- theHero.theHeroContainer:
 title: Hello World!
 subtitle: I am a portfolio template made in fastn, if you want to know more about how you can customize this template, bring more components, click on the GitHub Icon to take you to the repository.
+GitHubLink: https://www.github.com 
+LinkedinLink: https://www.linkedin.com
+TwitterLink: https://www.x.com 
+MailLink: https://www.gmail.com
 
 -- theProjects.theProjectsContainer:
 project1: Midnight Rush Blog Template
@@ -48,7 +54,7 @@ project4Date: 6th July 2023
 
 -- theSkills.theSkillsContainer:
 skill1: fastn
-skill1Description: A lightweight full-stack framework
+skill1Description: A lightweight full-stack web framework
 skill2: Markdown
 skill2Description: simple and easy-to-use markup language
 skill3: Javascript
@@ -57,7 +63,7 @@ skill4: Kubernetes
 skill4Description: Automated management of containerized applications.
 
 -- theFooter.theFooterContainer:
-copywrite: Copyright © 2023 at-the-vr
+FooterNotes: Made using `fastn`
 
 -- end: ftd.column
 

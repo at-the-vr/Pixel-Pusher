@@ -2,6 +2,9 @@
 -- import: at-the-vr.github.io/pixel-pusher/components/theNavbar
 -- import: at-the-vr.github.io/pixel-pusher/components/theHero
 -- import: at-the-vr.github.io/pixel-pusher/components/theFooter
+-- import: apneduniya.github.io/fastn-full-page/utils/animation
+
+-- animation.load:
 
 ;; START
 -- ftd.row:
@@ -28,7 +31,7 @@ link-2: about
 title: About
 subtitle: Hi, you found my About Page. One thing about me is I love Sticky Notes. My colleagues often tease me as a person with some "Sticky" Issues, but I like them for keeping me organized everyday.
 
--- ftd.row:
+-- ftd.column:
 width: fill-container
 align-content: center
 margin-bottom.px: 20
@@ -37,14 +40,23 @@ margin-bottom.px: 20
 src: https://images.unsplash.com/photo-1677506050896-78bf4d8f5ce4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2076&q=80
 width.fixed.px: 300
 height.fixed.px: 300
-border-radius.px: 5 
+border-radius.px: 5
+margin-bottom.px: 10
+padding-vertical.px: 10
+classes: wow, slideInRight
 
--- end:ftd.row
+
+-- ftd.text: That's me in my natural habitat
+color: #000
+role: $inherited.types.copy-small
+classes: wow, slideInRight
+
+-- end:ftd.column
 
 -- theFeaturesContainer:
 
 -- theFooter.theFooterContainer:
-copywrite: Copyright © 2023 at-the-vr
+FooterNotes: Made using `fastn`
 
 ;; -- end: ftd.column
 
@@ -74,12 +86,14 @@ padding-vertical.px: 30
 color: #000
 width: fill-container
 role: $inherited.types.heading-small
+classes: wow, slideInLeft
 
 -- ftd.text: $theAboutContainer.subtitle
 color: #000
 width: fill-container
 role: $inherited.types.copy-small
 text-align: justify
+classes: wow, slideInLeft
 
 -- end: ftd.column
 
@@ -96,26 +110,33 @@ text-align: justify
 -- component theFeaturesContainer:
 
 -- ftd.column:
+height: fill-container
 
 -- ftd.text: Here are some of my key features:
 color: #000
-role: $inherited.types.copy-small
+role: $inherited.types.copy-large
+style: bold
+classes: wow, slideInLeft
 
 -- ftd.text: - As a static site,  I am  fast ⚡
 color: #000
 role: $inherited.types.copy-small
+classes: wow, slideInLeft
 
 -- ftd.text: - Responsive in nature
 color: #000
 role: $inherited.types.copy-small
+classes: wow, slideInLeft
 
 -- ftd.text: - Minimalistic Design, less is more
 color: #000
 role: $inherited.types.copy-small
+classes: wow, slideInLeft
 
 -- ftd.text: - Easy to customize
 color: #000
 role: $inherited.types.copy-small
+classes: wow, slideInLeft
 
 -- end: ftd.column
 
