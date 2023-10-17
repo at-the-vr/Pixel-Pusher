@@ -1,7 +1,7 @@
 -- component theFooterContainer:
 string FooterNotes:
-optional boolean $is-hover-l1:
-optional boolean $is-hover-l2:
+optional boolean $is-hover-l1: false
+optional boolean $is-hover-l2: false
 
 
 -- ftd.row:
@@ -31,7 +31,6 @@ $on-mouse-leave$: $ftd.set-bool($a = $theFooterContainer.is-hover-l1, v = false)
 color: #979797
 role: $inherited.types.copy-small
 text-align: center
-link: #
 
 -- ftd.text: About
 color: #979797
@@ -40,8 +39,8 @@ text-align: center
 link: about
 style: underline
 color if { theFooterContainer.is-hover-l2 }: #474747
-$on-mouse-enter$: $ftd.set-bool($a = $theFooterContainer.is-hover-l1, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $theFooterContainer.is-hover-l1, v = false)
+$on-mouse-enter$: $ftd.set-bool($a = $theFooterContainer.is-hover-l2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $theFooterContainer.is-hover-l2, v = false)
 
 -- end: ftd.row
 
