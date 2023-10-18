@@ -26,14 +26,14 @@ max-width.fixed.px: 500
 title: Pixel Pusher
 title-link: #
 navlink-1: Home
-link-1: /
+link-1: #
 navlink-2: About
 link-2: about
 
 -- theHero.theHeroContainer:
 title: Hello World!
 subtitle: I am a portfolio template made in fastn, if you want to know more about how you can customize this template, bring more components, click on the GitHub Icon to take you to the repository.
-GitHubLink: https://www.github.com 
+GitHubLink: https://github.com/at-the-vr/Pixel-Pusher
 LinkedinLink: https://www.linkedin.com
 TwitterLink: https://www.x.com 
 MailLink: https://www.gmail.com
